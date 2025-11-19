@@ -25,6 +25,7 @@ body:has(.pantalla-cookies) {
 }
 /* formulario de cookies */
 .contedor-cookies {
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,29 +37,35 @@ body:has(.pantalla-cookies) {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
+@media screen and (max-width: 450px) {
+    .contedor-cookies {
+        height: 100dvh;
+        width: 100dvw;
+        margin-top: 200px;
+    }
+}
 .formulario {
     width: 100%;
-    max-width: 400px;
     height: 500px;
     overflow-y: auto;
     overflow-x: hidden;
-
+    
     & #cookiesForm, & .cookie-option, & .radio-group {
         display: flex;
         flex-direction: column;
         gap: 25px;
-
+        
         & .radio-group {
             gap: 10px;
-
+            
+        }
     }
-}
-
-.botonera {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    
+    .botonera {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
 }
 }
 

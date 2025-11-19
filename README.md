@@ -65,7 +65,7 @@ Este proyecto implementa un **sistema de gestión de cookies conforme con la nor
 
 ### Opción 1: Clonar el repositorio
 ```bash
-git clone <URL-DEL-REPOSITORIO>
+gh repo clone dj-leee/proyectoInicioPortafolio
 cd proyectoInicioPortafolio
 ```
 
